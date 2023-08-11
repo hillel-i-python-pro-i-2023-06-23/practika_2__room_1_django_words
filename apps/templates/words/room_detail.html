@@ -1,0 +1,16 @@
+{% extends "_helpers/_base.html" %}
+
+{% block content %}
+    <h1>{{ room.name_of_room }}</h1>
+
+    <h2>Change room</h2>
+    <ul>
+        {% for other_room in other_rooms %}
+            <li>
+                <a
+                        href="{% url 'room_detail' room_id=other_room.number_of_room %}">{{ other_room.name_of_room }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

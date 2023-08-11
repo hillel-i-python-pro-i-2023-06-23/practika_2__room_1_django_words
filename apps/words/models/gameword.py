@@ -9,6 +9,8 @@ class GameWord(models.Model):
     # phone_number = PhoneNumberField(blank=True)
     word = models.CharField(max_length=40, blank=False)
 
+    number_of_room = models.IntegerField(default=0, blank=True)
+
     created_at = models.DateTimeField(
         auto_now_add=True,
         blank=False,
@@ -19,4 +21,4 @@ class GameWord(models.Model):
         return f"{self.name_of_gamer} {self.word}"
 
     class Meta:
-        ordering = ["-created_at", "name_of_gamer"]
+        ordering = ["number_of_room", "-created_at", "name_of_gamer"]

@@ -2,6 +2,7 @@
     <thead>
     <tr>
         <th scope="col"></th>
+        <th>Room #</th>
         <th>PK</th>
         <th>name</th>
         <th>word</th>
@@ -11,6 +12,7 @@
     {% for word in object_list %}
         <tr>
             <th scope="row"></th>
+            <td>{{ word.number_of_room }}</td>
             <td>{{ word.pk }}</td>
             <td>{{ word.name_of_gamer }}</td>
             <td>{{ word.word }}</td>
