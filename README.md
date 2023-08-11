@@ -1,0 +1,1 @@
+# practika_2__room_1_django_words
