@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Run Django" type="Python.DjangoServer" factoryName="Django server">
-    <module name="practika_2__hlavnyi_volodymyr__django_words" />
+    <module name="practika_2__room_1_django_words" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>
@@ -8,7 +8,7 @@
       <env name="DJANGO_SETTINGS_MODULE" value="core.settings" />
     </envs>
     <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-    <option name="SDK_NAME" value="Python 3.11 (practika_2__hlavnyi_volodymyr__django_words)" />
+    <option name="SDK_NAME" value="Python 3.11 (practika_2__room_1_django_words)" />
     <option name="WORKING_DIRECTORY" value="" />
     <option name="IS_MODULE_SDK" value="false" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
