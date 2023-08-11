@@ -1,0 +1,12 @@
+{% extends "_helpers/_base.html" %}
+
+<div>
+{% block content %}
+
+    {% include "words/_gamewords_navbar.html" %}
+
+    <h1>list of words</h1>
+
+    {% include "words/_gamewords_list_base.html" with gamewords_list=object_list %}
+{% endblock %}
+</div>

@@ -1,0 +1,23 @@
+{% extends "_helpers/_base.html" %}
+
+{% block content %}
+    <h1>Play game (words)</h1>
+    <div>
+            <a href="{% url 'words:gamewords_delete' %}">
+                <button class="btn btn-outline-danger" type="button">
+                    New
+               </button>
+            </a>
+    </div>
+    <br>
+
+    <form method="POST" style="margin-bottom: 1em;">
+        {% csrf_token %}
+
+        {{ form.as_p }} <button class="btn btn-outline-primary" type="submit">Check</button>
+
+    </form>
+
+    {% include "words/_gamewords_list_base.html" with object_list=gamewords_list %}
+
+{% endblock %}

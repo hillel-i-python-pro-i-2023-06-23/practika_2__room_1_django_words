@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col"></th>
+        <th>PK</th>
+        <th>name</th>
+        <th>word</th>
+        <th>created at</th>
+    </tr>
+    </thead>
+    {% for word in object_list %}
+        <tr>
+            <th scope="row"></th>
+            <td>{{ word.pk }}</td>
+            <td>{{ word.name_of_gamer }}</td>
+            <td>{{ word.word }}</td>
+            <td>{{ word.created_at }}</td>
+        </tr>
+    {% endfor %}
+</table>

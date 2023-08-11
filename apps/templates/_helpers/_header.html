@@ -1,0 +1,60 @@
+<header>
+    <div class="container">
+        {% load static %}
+
+        <div>
+            <img src="{% static 'logo/django_base_project.png' %}" width="1301" height="41"
+                 alt="Django base project logo">
+        </div>
+
+        <nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample02">
+                    <ul class="navbar-nav me-auto">
+                        <!--
+                        <li class="nav-item">
+
+                            <a class="navbar-brand" href="{% url 'base:home_page' %}">
+                                <img src="{% static 'logo/logo_cs_ico.ico' %}" alt="Logo" width="30" height="24"
+                                     class="d-inline-block align-text-top">
+                                Home
+                            </a>
+                        </li>
+                        -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'base:home_page' %}">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'base:about_us_page' %}">
+                                About us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'base:contacts_page' %}">
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{% url 'words:gamewords_play' %}">
+                                Game Words
+                            </a>
+                        </li>
+                    </ul>
+                    <form>
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+</header>

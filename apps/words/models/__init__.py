@@ -1,0 +1,1 @@
+from .gameword import GameWord
